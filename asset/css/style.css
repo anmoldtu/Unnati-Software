@@ -288,6 +288,42 @@ ul.social-list li a:hover i {
     margin-top: 15px !important;
 }
 
+/* Logo (in navigation panel)*/
+
+.nav-logo-wrap{
+    float: left;
+    margin-right: 20px;
+}
+.nav-logo-wrap .logo{
+    display: table-cell;
+    vertical-align: middle;
+    max-width: 118px;
+    height: 75px;
+    
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.nav-logo-wrap .logo img{
+    max-height: 100%;
+}
+.nav-logo-wrap .logo:before,
+.nav-logo-wrap .logo:after{
+    display: none;
+}
+.logo,
+a.logo:hover{
+    font-family: Dosis, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+    color: rgba(0,0,0, .9);
+}
+
 .navbar {
 	margin-bottom: 0;
 	background: #fff;
