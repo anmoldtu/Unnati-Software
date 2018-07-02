@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Dashboard | User</title>
+        <title>Solution | Assignment</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta charset="utf-8">
@@ -24,47 +24,134 @@
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
-	<link rel="stylesheet" href="css/stylefr.css">
-			<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
-        <style>
-        * {box-sizing:border-box}
+    <link rel="stylesheet" href="css/stylefr.css">
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-        /* Container for skill bars */
-        .container {
-        width: 50%; /* Full width */
-        background-color: #ddd; /* Grey background */
-        }
-        .container1 {
-            width: 100%; /* Full width */
-            background-color:white; /* Grey background */
-        }
-
-        .skills {
-        text-align: right; /* Right-align text */
-        padding-right: 20px; /* Add some right padding */
-        line-height: 40px; /* Set the line-height to center the text inside the skill bar, and to expand the height of the container */
-        color: white; /* White text color */
-        }
-
-        .html {width: 90%; background-color: #4CAF50;} /* Green */
-        .css {width: 80%; background-color: #2196F3;} /* Blue */
-        .js {width: 65%; background-color: #f44336;} /* Red */
-        .php {width: 60%; background-color: #808080;} /* Dark Grey */
-        </style>
 
  <!-- CSS reset -->
-	<link rel="stylesheet" href="css/reset.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr --
-	
-		<link rel="stylesheet" href="css/style4.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/reset.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+        <link rel="stylesheet" href="css/style4.css"> <!-- Resource style -->
         
+
+        <style type="text/css">
+
+        * {
+        box-sizing: border-box;
+        font-family: 'Muli', sans-serif;
+    }
+
+    .card {
+        margin-top: 70px;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        opacity: 0.85;
+    }
+    .front,.front1,.back1,
+    .back {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition: -webkit-transform 300ms;
+        transition: -webkit-transform 300ms;
+        transition: transform 300ms;
+        transition: transform 300ms, -webkit-transform 300ms;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        border-radius: 5px;
+    }
+    .front {
+        transform: rotateY(0deg);
+        background: orangered;
+        text-align: center;
+        padding: 50px;
+    }
+    .back {
+
+        background: yellow;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        padding: 10px 15px;
+        color: #fff;
+    }
+    .front {
+        transform: rotateY(0deg);
+        background: orangered;
+        text-align: center;
+        padding: 30px;
+    }
+    .back {
+
+        background: yellow;
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+        padding: 40px 15px;
+        color: #fff;
+    }
+    .card:hover .front {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+    }
+    .card:hover .back {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+
+      .front .contact {
+          height: 120px;
+          width: 120px;
+          border: 5px solid #B2DBBF;
+          border-radius: 50%;
+          display: inline-block;
+          margin-bottom: 10px;
+      }
+    .front .name {
+        display: inline-block;
+        font-size: 48px;
+        color: #fff;
+    }
+    .front .job {
+        color: #fff;
+        font-size: 40px;
+    }
+    .front hr {
+        border: none;
+        color: #B2DBBF;
+        border: 1px solid;
+    }
+    .back .icon {
+        fill: currentColor;
+        color: inherit;
+        height: 33px;
+        width: 33px;
+        margin-top: 15px;
+        color: white;
+    }
+    .back .icon:hover {
+        cursor: pointer;
+        color: #648767;
+    }
+    .back .name1 {
+        display: inline-block;
+        font-size: 48px;
+        color: #fff;
+    }
+</style>
+
+
+
     </head>
-	
+    
 
-    <body class="appear-animate">
-
-	
-	
+    <body class="appear-animate" ">
+    
+    
         
         <!-- Page Loader -->        
         <div class="page-loader">
@@ -89,7 +176,7 @@
                         <i class="fa fa-bars"></i>
                     </div>
                     <!-- Main Menu -->
-                    <div class="inner-nav desktop-nav">
+                  <div class="inner-nav desktop-nav">
                         <ul class="clearlist scroll-nav local-scroll">
                             <li class="active"><a href="Dashboard_user.html">Home</a></li>
                             <li><a href="Assignment_Answers.html">Report Card</a></li>
@@ -102,60 +189,163 @@
             
             
             <!-- Section -->
-            <section style="width: 100%; height: 100vh; background-color: white">
-                <div  style="padding-top: 75px;">
-                        
-                   <h1 style="color:#f8c04d; font-weight: bold; font-size: 40px;">WELCOME USER!</h1>
-                </div>   
-<br><br>
-<div style="padding-left: 350px;color: black">
-                        <TABLE  border="5px solid black"    WIDTH="70%"   CELLPADDING="4" CELLSPACING="5"  style="background-color:#f8c04d" >
-                            <TR >
-                                <TH COLSPAN="2">
-                                    <H2 align="center"><b>COURSES</b></H2>
-                                </TH>
-                            </TR>
-                            <TH><h3>Module Name</h3></TH>
-                            <TH><h4>Status</h4></TH>
-                            <TR>
-                                <TD><h5><a href="Video.html">Introduction To Computer</a></h5></TD>
-                                <TD><h5>Incomplete</h5></TD>
-                            </TR>
-                            <TR>
-                                <TD><h5>Operating Systems</h5></TD>
-                                <TD><h5>Incomplete</h5></TD>
-                            </TR>
-                             <TR>
-                                <TD><h5>Introduction to Internet</h5></TD>
-                                <TD><h5>Incomplete</h5></TD>
-                            </TR>
-                        </TABLE>
-</div>
+            <section style="width: 100%; height: 180vh; background-color:white ;">
+                <div class="relative container align-left" style="padding-top: 75px;">
+                   <h1 style="color:#f8c04d; font-weight: bold; font-size: 50px;">WELCOME USER!</h1>
 
+
+
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+  
+                          <h1 style="color:grey; font-weight: bold; font-size: 35px;margin-bottom: 0px; ">YOUR COURSE</h1>
+                            <hr class="hrstyle">
+                        </div>
+                        <div style="width: 0.1%;background-color: grey;">
+                    
+                        </div>
+
+                        <div style="width: 50%">
+                            
+                            <h1 style="color:#f8c04d ;font-family: Open Sans;font-size: 80px;letter-spacing:0.2em; margin-bottom: 10px; margin-top: 0px;">DIGITAL LITERACY</h1>
+                        </div>
+
+               </div>
+                <hr width="100%" style="background-color: grey;">
+                  
+
+
+
+                    <div style="display: flex; justify-content: space-between;">
+                        <div>
+  
+                          <h1 style="color:grey; font-weight: bold; font-size: 35px;margin-bottom: 0px;width: 260.59px;text-align: center; ">MODULES</h1>
+                            <hr class="hrstyle">
+                        </div>
+
+                        <div style="width: 50%">
+                        </div>
+
+               </div>
+
+
+
+                <div style="display: flex;justify-content: space-around; flex-wrap: wrap;">
+                    <div style="width: 30%;">
+                        <div class='card'>
+                            <div class='front' style="background-color: red;">
+                                <br>
+                                <br>
+                                 <div style="font-size: 35px;">INTRODUCTION<br>TO<br>COMPUTERS </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class='back'style="background-color:dodgerblue;font-size: 20px;font-weight: bold;text-align: center;color: black;letter-spacing: 0.2em;font-family: Open Sans;">
+                               <a href="#"><p style="padding-top: 20px;">VIDEO</p></a>
+                               <a href="#"><p>ASSIGNMENT</p></a>
+                               <a href="#"><p>STUDY MATERIAL</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="width: 30%;">
+                        <div class='card'>
+                            <div class='front' style="background-color: green;">
+                                <br>
+                                <br>
+                                 <div style="font-size: 40px;">OPERATING<br>SYSTEMS </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class='back'style="background-color:yellow;font-size: 20px;font-weight: bold;text-align: center;color: black;letter-spacing: 0.2em;font-family: Open Sans;">
+                               <a href="#"><p style="padding-top: 20px;">VIDEO</p></a>
+                               <a href="#"><p>ASSIGNMENT</p></a>
+                               <a href="#"><p>STUDY MATERIAL</p></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <div class='card'>
+                            <div class='front'>
+                                <br>
+                                <br>
+                                 <div style="font-size: 35px;">INTRODUCTION<br>TO<br>INTERNET </div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class='back'style="background-color:red;font-size: 20px;font-weight: bold;text-align: center;color: black;letter-spacing: 0.2em;font-family: Open Sans;">
+                               <a href="#"><p style="padding-top: 20px;">VIDEO</p></a>
+                               <a href="#"><p>ASSIGNMENT</p></a>
+                               <a href="#"><p>STUDY MATERIAL</p></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 30%;">
+                       <div class='card'>
+                            <div class='front' style="background-color: darkcyan;">
+                                <br>
+                                <br>
+                                 <div style="font-size: 32px;">COMMUNICATION<br>WITH<br>INTERNET</div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class='back'style="background-color:orangered;font-size: 20px;font-weight: bold;text-align: center;color: black;letter-spacing: 0.2em;font-family: Open Sans;">
+                               <a href="#"><p style="padding-top: 20px;">VIDEO</p></a>
+                               <a href="#"><p>ASSIGNMENT</p></a>
+                               <a href="#"><p>STUDY MATERIAL</p></a>
+                            </div>                       
+                        </div>
+                    </div>
+
+                    <div style="width: 30%;">
+                       <div class='card'>
+                            <div class='front' style="background-color: blue;">
+                                <br>
+                                <br>
+                                 <div style="font-size: 35px;">APPLICATIONS<br>OF<br>INTERNET</div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class='back'style="background-color:blueviolet;font-size: 20px;font-weight: bold;text-align: center;color: black;letter-spacing: 0.2em;font-family: Open Sans;">
+                               <a href="#"><p style="padding-top: 20px;">VIDEO</p></a>
+                               <a href="#"><p>ASSIGNMENT</p></a>
+                               <a href="#"><p>STUDY MATERIAL</p></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 30%;">
+                        <div class='card'>
+                            <div class='front' style="background-color: orange;">
+                                <br>
+                                <br>
+                                 <div style="font-size: 40px;">GOOGLE<br>SEARCH</div>
+                                <br>
+                                <br>
+                            </div>
+                            <div class='back'style="background-color:cyan;font-size: 20px;font-weight: bold;text-align: center;color: black;letter-spacing: 0.2em;font-family: Open Sans;">
+                               <a href="#"><p style="padding-top: 20px;">VIDEO</p></a>
+                               <a href="#"><p>ASSIGNMENT</p></a>
+                               <a href="#"><p>STUDY MATERIAL</p></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+                </div>
             </section>
-            <div class="container1">
-
-            <div class="container">
-                <h3 style="color: black">HTML:</h3> <div class="skills html">90%</div>
-            </div>
-<br>
-
-            <div class="container">
-                <h3>CSS</h3> <div class="skills css">80%</div>
-            </div>
-<br>
-
-            <div class="container">
-                <h3 style="color: black">HTML:</h3> <div class="skills js">65%</div>
-            </div>
-
-            <br>
-            <div class="container">
-                <h3 style="color: black">HTML:</h3> <div class="skills php">60%</div>
-            </div>
-            </div>
             <!-- End Section -->
-            
 
             
             
@@ -163,10 +353,80 @@
             <hr class="mt-0 mb-0 "/>
             <!-- End Divider -->
             
-            
-            <!-- Footer -->
 
-            <!-- End Footer Text -->
+
+
+                        <!-- Footer -->
+            <footer class="page-section bg-gray-lighter footer pb-40" style="padding-top: 50px;">
+                <div style="display: flex; justify-content: space-around;">
+                    
+                    <div style="width: 20%;text-align: center; color: black;letter-spacing: 0.2em;">
+                        <hr class="hrstyle">
+                        <h2>ABOUT ENACTUS DTU</h2>
+                        <p>WE, at Enactus DTU, apply entrepreneurial concepts to develop dynamic projects that take advantage of people’s inherent dexterity and aptitude at the center of improving their livelihoods.</p>
+                        <hr class="hrstyle">
+                    </div>
+
+                    <div>
+                                <!-- Footer Logo -->
+                                <div style="display: flex;justify-content: center;">
+                                    <div class="local-scroll wow fadeInUp" data-wow-duration="1.2s" style="width: 50%;">
+                                        <a href="#top"><img src="images/Unnati.png" width="150" height="150" alt="" /></a>&nbsp;
+                                    </div>
+                                </div>
+                                <!-- End Footer Logo -->
+
+                                <div style="display: flex;justify-content: center;margin-bottom: 20px; ">
+                                 <div style="width: 1px;height:50px;background-color:grey">
+                                     
+                                 </div>
+                              </div>
+
+                                <!-- Social Links -->
+                                <div class="footer-social-links mb-xs-40">
+                                    <a href="https://www.facebook.com/DTU2018RotaractMUN/?ref=br_rs" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://twitter.com/rotaractdtu?lang=en" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/rotaract_dtu/" title="Instagarm" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a href="https://rotaractdtu.wordpress.com" title="wordpress" target="_blank"><i class="fa fa-wordpress"></i></a>
+                                    <a href="https://in.linkedin.com/company/rotaract-club-of-dtu" title="Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+
+                                </div>
+                                <!-- End Social Links -->  
+                                
+                                <div style="display: flex;justify-content: center;margin-top:20px;margin-bottom: 10px; ">
+                                 <div style="width: 1px;height:50px;background-color:grey">
+                                     
+                                 </div>
+                              </div>
+                                <!-- Footer Text -->
+                                <div class="footer-text">
+                                    <div class="footer-made">
+                                        Made With <span style="color: #e25555;">&hearts;</span> by Enactus, Delhi Technological University
+                                    </div>
+                                </div>
+                        <!-- End Footer Text --> 
+                        
+
+                     </div>
+
+
+                     <div style="width: 20%;text-align: center; color: black;letter-spacing: 0.2em;">
+                      
+                      <hr class="hrstyle">
+                       <h2 style="margin-bottom: 5px;">FACING AN ISSUE?</h2>
+                        <h4>CONTACT US</h4>
+                        <p>Mail Us:<br><a HREF="mailto:unnati.enactus.dtu@gmail.com">unnati.enactus.dtu@gmail.com</a></p>
+                         <hr class="hrstyle">
+
+                     </div>
+
+
+                </div>
+            </footer>
+
+            <!-- End Footer -->
+        
+        
         </div>
         <!-- End Page Wrap -->
         
@@ -204,7 +464,7 @@
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 
 <script>
-	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+    if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
 
     function myFunction()
     {
@@ -223,5 +483,5 @@
 
 
     <script  src="js/index6.js"></script>
-            </footer>
+    </body>
 </html>
